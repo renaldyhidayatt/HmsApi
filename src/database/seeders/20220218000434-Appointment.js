@@ -11,8 +11,8 @@ module.exports = {
       [
         {
           doctorSpecialization: "Dentist",
-          doctorId: 1,
-          userId: 1,
+          DoctorId: 1,
+          UserId: 1,
           consultancyFees: 500,
           appointmentDate: "2022-02-18",
           appointmentTime: "07.09",
@@ -23,8 +23,8 @@ module.exports = {
         },
         {
           doctorSpecialization: "Homeopath",
-          doctorId: 2,
-          userId: 2,
+          DoctorId: 2,
+          UserId: 2,
           consultancyFees: 500,
           appointmentDate: "2022-02-18",
           appointmentTime: "07.09",
@@ -35,8 +35,8 @@ module.exports = {
         },
         {
           doctorSpecialization: "Ayurveda",
-          doctorId: 3,
-          userId: 3,
+          DoctorId: 3,
+          UserId: 3,
           consultancyFees: 500,
           appointmentDate: "2022-02-18",
           appointmentTime: "07.09",

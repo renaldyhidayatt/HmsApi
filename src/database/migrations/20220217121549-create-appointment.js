@@ -11,24 +11,24 @@ module.exports = {
       doctorSpecialization: {
         type: Sequelize.STRING
       },
-      // doctorId: {
-      //   type: Sequelize.INTEGER,
-      //   onDelete: 'CASCADE',
-      //   allowNull: true,
-      //   references: {
-      //     model: "Doctors",
-      //     key: "id"
-      //   }
-      // },
-      // userId: {
-      //   type: Sequelize.INTEGER,
-      //   onDelete: 'CASCADE',
-      //   allowNull: true,
-      //   references: {
-      //     model: 'Users',
-      //     key: 'id'
-      //   }
-      // },
+      DoctorId: {
+        type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
+        allowNull: true,
+        references: {
+          model: "Doctors",
+          key: "id"
+        }
+      },
+      UserId: {
+        type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
+        allowNull: true,
+        references: {
+          model: 'Users',
+          key: 'id'
+        }
+      },
       consultancyFees: {
         type: Sequelize.STRING,
       },
