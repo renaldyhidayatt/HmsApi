@@ -15,7 +15,7 @@ class AppointmentController {
   getById(req, res) {
     return AppointmentService.getById(req.params.id)
       .then((spe) => {
-        res.send(spe);
+        res.json({data: spe});
       })
       .catch((err) => {
         return res.status(500).json({
@@ -37,7 +37,9 @@ class AppointmentController {
 
     return AppointmentService.create(apo)
       .then((apo) => {
-        return res.send(apo);
+        return res.status(200).json({
+          message: "Success"
+        });
       })
       .catch((err) => {
         return res.json({

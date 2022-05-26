@@ -2,11 +2,11 @@ const router = require('express').Router()
 const DoctorSpecController = require('../controller/doctorspe');
 
 
-router.get('/doctorspesialis', DoctorSpecController.getAll) 
-router.get('/doctorspesialis/:id', DoctorSpecController.getById); 
-router.post('/doctorspesialis', DoctorSpecController.create);
-router.post('/doctorspesialis/:id', DoctorSpecController.updateById);
-router.delete('/doctorspesialis/:id', DoctorSpecController.deleteById);
+router.get('/', DoctorSpecController.getAll) 
+router.get('/:id', DoctorSpecController.getById); 
+router.post('/', DoctorSpecController.create);
+router.post('/:id', DoctorSpecController.updateById);
+router.delete('/:id', DoctorSpecController.deleteById);
 
 
 module.exports = router;
